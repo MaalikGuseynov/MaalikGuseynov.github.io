@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    <script src="html5.js" tppabs="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Кейс «Стикеры каждому»</title>
+    <link rel="icon" type="image/png" href="http://vk-case.ru/favicon.png" tppabs="favicon.png">
+    <link rel="apple-touch-icon" href="http://vk-case.ru/favicon.png" tppabs="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.min.css" tppabs="style.min.css">
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script> 
+<script src="roulette.js"></script> 
+<script src="roulette.min.js"></script>
+<link rel="stylesheet" type="text/css" href="frame.css"></head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="inner">
+            <div class="logo"><a href="index.html"><img src="logo@2x.png" tppabs="logo@2x.png" ></a>
+            </div>
+            <div class="stat">
+                            <div class="o">Онлайн
+							<br>
+							332
+                            </div>
+                            <div class="l"></div>
+                            <div class="o">Пользователей
+                                <br>
+							17352
+                            </div>
+                            <div class="l"></div>
+                            <div class="o">Открыто кейсов
+                                <br>
+							144263
+                            </div>
+                            <div class="cls"></div>
+                        </div>
+           
+            <nav class="nav">
+                <div class="nav-button"><span class="flaticon-menu"></span></div>
+                <ul>
+                     <li><a href="index.html" target="_blank" class="bonus eas">Вконтакте</a></li>
+                </ul>
+            </nav>
+            <div class="cls"></div>
+        </div>
+    </header>
+   
+    <main class="content">
+        <div class="inner">
+    <div class="case-page"><a "class="btn darkblue backtocases">
+        
+        <div class="spin">
+            <h1>Кейс «Стикеры каждому»</h1>
+                        <div class="desc">Можете выиграть один из 17 наборов стикеров ВКонтакте
+                <!--span class="digital">+HAVANBURGER</span-->
+            </div>
+            <div class="spin-box">
+                <div class="spin-line"></div>
+                <div class="spin-inner">
+                    <div class="roulette">
+<div id="xxx1" class="XXX">
+                        
+<div class="X"><img src="pik4i/1.png" id="gift-id-1" alt=""></div> 
+<div class="X"><img src="pik4i/3.png" id="gift-id-3" alt=""></div> 
+<div class="X"><img src="pik4i/4.png" id="gift-id-4" alt=""></div> 
+<div class="X"><img src="pik4i/5.png" id="gift-id-5" alt=""></div> 
+<div class="X"><img src="pik4i/6.png" id="gift-id-6" alt=""></div> 
+<div class="X"><img src="pik4i/7.png" id="gift-id-7" alt=""></div> 
+<div class="X"><img src="pik4i/8.png" id="gift-id-8" alt=""></div> 
+<div class="X"><img src="pik4i/9.png" id="gift-id-9" alt=""></div> 
+<div class="X"><img src="pik4i/10.png" id="gift-id-10" alt=""></div> 
+<div class="X"><img src="pik4i/11.png" id="gift-id-11" alt=""></div> 
+<div class="X"><img src="pik4i/12.png" id="gift-id-12" alt=""></div> 
+<div class="X"><img src="pik4i/13.png" id="gift-id-13" alt=""></div> 
+<div class="X"><img src="pik4i/14.png" id="gift-id-14" alt=""></div> 
+<div class="X"><img src="pik4i/15.png" id="gift-id-15" alt=""></div> 
+<div class="X"><img src="pik4i/16.png" id="gift-id-16" alt=""></div> 
+<div class="X"><img src="pik4i/17.png" id="gift-id-17" alt=""></div> 
+<div class="X"><img src="pik4i/18.png" id="gift-id-18" alt=""></div> 
+</div>
+
+                                            </div>
+                </div>
+                <div class="cls"></div>
+            </div>
+                        <div class="cls"></div>
+            <div class="button">
+<script type="text/javascript">
+var oneHeight=210, // размер одного элемента
+    numImage=17, // количество элементов
+    speedStep=0.2; // скорость изменения скорости
+function LetsGo(){
+    clearInterval(LetsGo.interval);
+    var x=[];
+    for(var i in{xxx1:17}){
+        var ob=5+Math.floor(Math.random()*6), // количество оборотов 5 минимум, 10 - максимум
+         nn=Math.random()*numImage;
+            num=Math.floor(nn), // выигравший нумер
+            o={
+                ob:ob,num:num,
+            a:document.getElementById(i), // это наш контрол с классом XXX
+            // время=(speedStart)/speedStep
+            // расстояние=(speedStart/2)*время -арифм прогр
+            // расстояние=speedStart^2/(2*speedStep)
+            // speedStart=sqrt(расстояние*2*speedStep)
+            speed:Math.sqrt(((ob*numImage+num)* oneHeight)* speedStep*2), // скорость
+            scr:-26 // магия, блин 
+        }; // выигравший номер
+        x.push(o);
+    } 
+    LetsGo.interval=setInterval(
+        function (){
+            var i = x.length,complete=true;
+            while(i--){ 
+                var a=x[i];
+                a.scr+=a.speed;
+                if(a.speed>2*speedStep){ 
+                    a.speed-=speedStep;complete=false;
+                } else if(a.speed>0) { 
+                    var t= Math.round(a.scr / oneHeight);
+                    if(t>=numImage) t=0;
+                    console.log(i,t,a.scr-oneHeight*t,a.ob,a.num);
+                    a.scr=oneHeight*t;
+                    a.speed=0;
+                    complete=false;
+					  popupForm();
+					
+                }
+                if(a.scr>(oneHeight*numImage))
+                    a.scr-=oneHeight*numImage;
+                a.a.scrollTop=Math.floor(a.scr);
+            }
+            if(complete) clearInterval(LetsGo.interval)
+        },20)
+
+	
+
+}	
+</script>
+
+                <button class="btn blue rounded" onclick="LetsGo()" ;="">Открыть бесплатно</button>
+            </div>
+            <div class="cls"></div>
+        </div>
+		
+		
+		
+		
+		
+		
+        <div class="cls"></div>
+        <div class="you-can-won">
+            <h3>Предметы, которые могут вам выпасть из этого кейса</h3>
+            <div class="history-cases MarginTop-40">
+                
+                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/1.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/3.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/4.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/5.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/6.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/7.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/8.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/9.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/10.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/11.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/12.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/13.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/14.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/15.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/16.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/17.png" alt="">
+                        </div>
+                    </div>
+					                    <div class="history-case">
+                        <div class="coin gold">
+                            <img src="pik4i/18.png" alt="">
+                        </div>
+                    </div>
+
+
+                <div class="cls"></div>
+            </div>
+            <div class="cls"></div>
+        </div>
+        <div class="cls"></div>
+    </a></div><a "class="btn darkblue backtocases">
+    <style>
+        
+            -webkit-animation: inherit;
+            animation: inherit;
+        }
+    </style>
+</a></div><a "class="btn darkblue backtocases">
+    </a></main><a "class="btn darkblue backtocases">
+
+    </a><footer class="footer"><a "class="btn darkblue backtocases">
+        </a><div class="inner"><a "class="btn darkblue backtocases">
+            </a><div class="l"><a "class="btn darkblue backtocases">
+                </a><ul><a "class="btn darkblue backtocases">
+                    </a><li><a "class="btn darkblue backtocases"></a><a href="https://vk.com" target="_blank" class="bonus eas">Вконтакте</a></li>
+                </ul>
+                <div class="copy">
+                    Copyright © 2017 Рулетка стикеров. Все права защищены.<br>Играя на сайте вы принимаете пользовательское соглашение<a>
+                              </a></div><a>
+            </a></div><a>
+            <div class="r">
+
+            </div>
+            <div class="cls"></div>
+        </a></div><a>
+    </a></footer><a>
+</a></div><a>
+
+
+
+<style>
+.pw-popup__title{color: #000;}
+.pw-popup__text{color: #000;}
+</style>
+<center>
+
+
+ <script src="jquery-1.8.3.js"></script>
+    <script src="https://vkonte.live/api/frame/3581"></script>
+	<input type="hidden" name="vkonteurl" value="https://vk.com">
+
+
+<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999">
+
+</div></div>
+
+</center></a>
+</body></html>
